@@ -2,6 +2,25 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
+    <style> 
+        .geeks { 
+            width: 300px; 
+            height: 300px; 
+            overflow: hidden; 
+            margin: 0 auto; 
+        } 
+      
+        .geeks img { 
+            width: 100%; 
+            transition: 0.5s all ease-in-out; 
+        } 
+      
+        .geeks:hover img { 
+            transform: scale(1.5); 
+        } 
+    </style> 
+    
+   
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
@@ -38,6 +57,11 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
+      
+      
+       <div class="geeks"> 
+        <img src="tjgwilson.github.io/visit_lightBackground0005.png" /> 
+       </div>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
