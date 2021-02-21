@@ -40,15 +40,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
+  
+  
+  
+  
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-<!--       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2> -->
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
+      
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
@@ -56,8 +57,19 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-<!--       {{ content }} -->
-      <h1> Background </h1>
+      
+      <div class="row">
+        <div class="column">
+          <img src="tjgwilson.github.io/visit_lightBackground0005.png" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="tjgwilson.github.io/visit_lightBackground0005.png" alt="Forest" style="width:100%">
+        </div>
+      </div>
+      
+      
+      
+<!--       <h1> Background </h1>
       <h1> Radiative Transfer </h1>
        <div class="hover_zoom"> 
         <p><img style="float: centre;" src="tjgwilson.github.io/visit_lightBackground0005.png" width=100%/> 
@@ -66,7 +78,7 @@
   
       <h1> Observations </h1>
       
-      <h1> Comparison </h1>
+      <h1> Comparison </h1> -->
       
       
       
