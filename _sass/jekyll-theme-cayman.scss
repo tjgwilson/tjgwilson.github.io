@@ -3,20 +3,43 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-@mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
-    @content;
-  }
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
 }
 
-@mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+// @media screen and (max-width: 500px) {
+//   .column {
+//     width: 100%;
+//   }
+// }
+
+// @mixin large {
+//   @media screen and (min-width: #{$large-breakpoint}) {
+//     @content;
+//   }
+// }
+// 
+// @mixin medium {
+//   @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+//     @content;
+//   }
+// }
 
 @mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
+  @media screen and (max-width: #{$large-breakpoint}) {
+    .column {
+    width: 100%;
+  }
     @content;
   }
 }
@@ -83,14 +106,14 @@ a {
     margin-left: 1rem;
   }
 
-  @include large {
-    padding: 0.75rem 1rem;
-  }
-
-  @include medium {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
+//   @include large {
+//     padding: 0.75rem 1rem;
+//   }
+// 
+//   @include medium {
+//     padding: 0.6rem 0.9rem;
+//     font-size: 0.9rem;
+//   }
 
   @include small {
     display: block;
@@ -111,13 +134,13 @@ a {
   background-color: $header-bg-color;
 //   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
 
-  @include large {
-    padding: 1rem 2rem;
-  }
-
-  @include medium {
-    padding: 1rem 1rem;
-  }
+//   @include large {
+//     padding: 1rem 2rem;
+//   }
+// 
+//   @include medium {
+//     padding: 1rem 1rem;
+//   }
 
   @include small {
     padding: 1rem 1rem;
@@ -128,13 +151,13 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 
-  @include large {
-    font-size: 3.25rem;
-  }
-
-  @include medium {
-    font-size: 2.25rem;
-  }
+//   @include large {
+//     font-size: 3.25rem;
+//   }
+// 
+//   @include medium {
+//     font-size: 2.25rem;
+//   }
 
   @include small {
     font-size: 1.75rem;
@@ -146,13 +169,13 @@ a {
   font-weight: normal;
   opacity: 0.7;
 
-  @include large {
-    font-size: 1.25rem;
-  }
-
-  @include medium {
-    font-size: 1.15rem;
-  }
+//   @include large {
+//     font-size: 1.25rem;
+//   }
+// 
+//   @include medium {
+//     font-size: 1.15rem;
+//   }
 
   @include small {
     font-size: 1rem;
@@ -166,17 +189,17 @@ a {
     margin-top: 0;
   }
 
-  @include large {
-    max-width: 64rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-
-  @include medium {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
-  }
+//   @include large {
+//     max-width: 64rem;
+//     padding: 2rem 6rem;
+//     margin: 0 auto;
+//     font-size: 1.1rem;
+//   }
+// 
+//   @include medium {
+//     padding: 2rem 4rem;
+//     font-size: 1.1rem;
+//   }
 
   @include small {
     padding: 2rem 1rem;
@@ -355,13 +378,13 @@ a {
   margin-top: 2rem;
   border-top: solid 1px $hr-border-color;
 
-  @include large {
-    font-size: 1rem;
-  }
-
-  @include medium {
-    font-size: 1rem;
-  }
+//   @include large {
+//     font-size: 1rem;
+//   }
+// 
+//   @include medium {
+//     font-size: 1rem;
+//   }
 
   @include small {
     font-size: 0.9rem;
