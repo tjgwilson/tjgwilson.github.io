@@ -183,6 +183,7 @@ a {
 }
 
 .main-content {
+  background-color: $header-bg-color;
   word-wrap: break-word;
   padding: 1rem 1rem;
   :first-child {
