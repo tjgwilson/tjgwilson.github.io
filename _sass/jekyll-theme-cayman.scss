@@ -151,7 +151,7 @@ a {
 .btn:after {
 	content: '';
 	position: absolute;
-// 	z-index: -1;
+	z-index: auto;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -174,7 +174,6 @@ a {
 
 .btn-1c:hover,
 .btn-1c:active {
-	z-index: 1;
 	color: #E040FB;
 }
 
