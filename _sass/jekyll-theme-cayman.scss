@@ -130,7 +130,11 @@ a {
 
 div.ex1 {
   width: 100%;
-  padding: 0rem 0rem 10rem;
+  padding: 0rem 0rem 5rem;
+  border-bottom: 1px solid $header-bg-color;
+}
+div.ex2 {
+  padding: 5rem 0rem 10rem;
   border-bottom: 1px solid $header-bg-color;
 }
 
