@@ -86,13 +86,13 @@ a {
 
 .btn {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
   border-width: 1px;
-  border-radius: 0.3rem;
+  border-radius: 0.0rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
@@ -103,7 +103,7 @@ a {
   }
 
   + .btn {
-    margin-left: 1rem;
+    margin-left: 0.1rem;
   }
 
 //   @include large {
@@ -131,7 +131,7 @@ a {
 
 #header {
   background-color: $header-bg-color;
-  padding: 20px 10px;
+  padding: 10px 10px;
   color: $header-heading-color;
   font-size: 1.75rem;
   text-align: center;
