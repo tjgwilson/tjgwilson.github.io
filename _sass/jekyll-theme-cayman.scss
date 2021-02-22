@@ -131,6 +131,7 @@ a {
 /* General button style (reset) */
 .btn {
 	border: none;
+	z-index: 0;
 	font-family: inherit;
 	font-size: inherit;
 	color: #000000;
@@ -151,7 +152,7 @@ a {
 .btn:after {
 	content: '';
 	position: absolute;
-	z-index: initial;
+	z-index: -1;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
