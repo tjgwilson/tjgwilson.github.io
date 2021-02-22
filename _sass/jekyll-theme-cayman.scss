@@ -14,8 +14,6 @@
   content: "";
   clear: both;
   display: table;
-  padding: 5rem 0rem 10rem;
-  border-bottom: 1px solid $header-bg-color;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -136,7 +134,7 @@ div.ex1 {
   border-bottom: 1px solid $header-bg-color;
 }
 div.ex2 {
-  padding: 5rem 0rem 10rem;
+  padding: 5rem 0rem 5rem;
   border-bottom: 1px solid $header-bg-color;
 }
 
