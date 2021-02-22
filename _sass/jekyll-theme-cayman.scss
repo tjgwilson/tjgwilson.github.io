@@ -488,3 +488,16 @@ div.ex2 {
 .site-footer-credits {
   color: $blockquote-text-color;
 }
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #E040FB;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
