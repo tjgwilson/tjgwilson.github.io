@@ -127,10 +127,11 @@ a {
     }
   }
 }
+
 div.ex1 {
   width: 100%;
-  padding: 1rem 1rem;
-  border-bottom: 3px solid $header-bg-color;
+  padding: 0rem 0rem 10rem;
+  border-bottom: 1px solid $header-bg-color;
 }
 
 #header {
