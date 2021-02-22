@@ -49,7 +49,7 @@
 
 
     <div id="header">
-      <h1 style="text-align:left;"> Synthetic and Observed Hydrogen Emission from T Tauri Stars </h1>
+      <h1> Synthetic and Observed Hydrogen Emission from T Tauri Stars </h1>
 
       {% if site.show_downloads %}
         <a href="tjgwilson.github.io/coolStars_draft2.pdf" class="btn">Poster</a>
@@ -107,6 +107,7 @@
     function scrollFunction() {
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("header").style.fontSize = "0.4rem";
+        document.getElementById("header").style.textAlign = "left";
         document.getElementById("btn").style.fontSize = "1.75rem";
       } else {
         document.getElementById("header").style.fontSize = "1.75rem";
