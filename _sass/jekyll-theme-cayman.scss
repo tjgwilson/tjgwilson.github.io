@@ -129,12 +129,11 @@ a {
 // }
 
 
-/* General button style (reset) */
 .btn {
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
-	color: $btn-color;
+	color: inherit;
 	background: none;
 	cursor: pointer;
 	padding: 1em 1em;
