@@ -133,7 +133,7 @@ a {
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
-	color: inherit;
+	color: #000000;
 	background: none;
 	cursor: pointer;
 	padding: 25px 80px;
@@ -159,8 +159,8 @@ a {
 
 /* Button 1 */
 .btn-1 {
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid #000000;
+	color: #000000;
 }
 
 /* Button 1c */
@@ -169,12 +169,12 @@ a {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #fff;
+	background: #000000;
 }
 
 .btn-1c:hover,
 .btn-1c:active {
-	color: #0e83cd;
+	color: #E040FB;
 }
 
 .btn-1c:hover:after,
