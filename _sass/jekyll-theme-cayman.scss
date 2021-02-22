@@ -160,8 +160,8 @@ a {
 
 /* Button 1 */
 .btn-1 {
-	border: 2px solid $btn-border1;
-	color: $btn-color;
+	border: 2px solid #000000;
+	color: #000000;
 }
 
 /* Button 1c */
@@ -170,12 +170,12 @@ a {
 	height: 0%;
 	top: 0;
 	left: 0;
-	background: #E040FB;
+	background: #000000;
 }
 
 .btn-1c:hover,
 .btn-1c:active {
-	color: invert($btn-color);
+	color: #E040FB;
 }
 
 .btn-1c:hover:after,
