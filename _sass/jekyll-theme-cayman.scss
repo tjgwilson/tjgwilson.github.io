@@ -151,7 +151,7 @@ a {
 .btn:after {
 	content: '';
 	position: absolute;
-	z-index: auto;
+	z-index: initial;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -165,8 +165,8 @@ a {
 
 /* Button 1c */
 .btn-1c:after {
-	width: 0%;
-	height: 100%;
+	width: 100%;
+	height: 0%;
 	top: 0;
 	left: 0;
 	background: #000000;
@@ -179,7 +179,7 @@ a {
 
 .btn-1c:hover:after,
 .btn-1c:active:after {
-	width: 100%;
+	height: 100%;
 }
 
 
