@@ -13,11 +13,13 @@
         } 
       
         .hover_zoom img { 
-            transition: 1.0s all ease-in-out; 
+            transition: 1.0s all ease-in-out;
+            z-index: -1;    
         } 
       
         .hover_zoom:hover img { 
             transform: scale(3.0); 
+            z-index: -1;
         } 
     </style> 
     
@@ -51,10 +53,6 @@
 
     <div id="header">
       <h1> Synthetic and Observed Hydrogen Emission from T Tauri Stars </h1>
-
-      {% if site.show_downloads %}
-        <a href="tjgwilson.github.io/coolStars_draft2.pdf"><button class="btn btn-1 btn-1c">Poster</button></a>
-      {% endif %}
       </div>
 
     <main id="content" class="main-content" role="main">
@@ -64,6 +62,7 @@
         Accretion and outflows in CTTS control the stellar formation, but the underlying physics of these systems is poorly constrained.
         The use of high-resolution spectra offers a powerful diagnostic probe for understanding these processes.
         We present our first parameter study, which investigates synthetic and observed hydrogen emission.
+        <a href="tjgwilson.github.io/coolStars_draft2.pdf"><button class="btn btn-1 btn-1c">Poster</button></a>
       </div>
       
       <div class="row" style="padding-top: 5rem;">
