@@ -53,7 +53,7 @@
     	width: 100%;
      }
      div.ex2 {
-  	right-bottom: none;
+  	border-right: none;
      }
     @content;
   }
@@ -163,9 +163,9 @@ div.ex1 {
   border-bottom: 1px solid $hr-border-color;
 }
 div.ex2 {
-  padding: 5rem 0rem 5rem;
+  padding: 0rem 0rem 5rem;
   border-bottom: 1px solid $hr-border-color;
-  right-bottom: 1px solid $hr-border-color;
+  border-right: 1px solid $hr-border-color;
 }
 
 #header {
