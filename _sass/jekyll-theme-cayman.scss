@@ -27,23 +27,6 @@
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-// @media screen and (max-width: 500px) {
-//   .column {
-//     width: 100%;
-//   }
-// }
-
-// @mixin large {
-//   @media screen and (min-width: #{$large-breakpoint}) {
-//     @content;
-//   }
-// }
-// 
-// @mixin medium {
-//   @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-//     @content;
-//   }
-// }
 
 @mixin small {
   @media screen and (max-width: #{$large-breakpoint}) {
@@ -55,6 +38,10 @@
 	  
      div.ex2 {
      border-bottom: 1px solid $hr-border-color;
+     }
+	  
+    .main-content {
+  	padding-top:400px;
      }
     @content;
   }
@@ -192,7 +179,7 @@ div.ex2 {
   background-color: $main-bg-color;
   word-wrap: break-word;
   padding: 1rem 1rem;
-  padding-top:400px;
+  padding-top:200px;
   :first-child {
     margin-top:0px;
   }
