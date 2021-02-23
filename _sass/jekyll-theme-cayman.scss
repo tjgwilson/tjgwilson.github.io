@@ -8,6 +8,16 @@
   width: 50%;
   padding: 5px;
 }
+.column2 {
+  float: left;
+  width: 70%;
+  padding: 5px;
+}
+.column3 {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
 
 /* Clearfix (clear floats) */
 .row::after {
@@ -37,7 +47,9 @@
 
 @mixin small {
   @media screen and (max-width: #{$large-breakpoint}) {
-    .column {
+    .column,
+    .column2,
+    .column3{
     width: 100%;
   }
     @content;
