@@ -52,6 +52,10 @@
     .column3{
     	width: 100%;
      }
+	  
+     div.ex2 {
+     border-bottom: 1px solid $hr-border-color;
+     }
     @content;
   }
 }
@@ -160,8 +164,8 @@ div.ex1 {
   border-bottom: 1px solid $hr-border-color;
 }
 div.ex2 {
+  width: 100%;
   padding: 0rem 0rem 5rem;
-  border-bottom: 1px solid $hr-border-color;
 }
 
 #header {
