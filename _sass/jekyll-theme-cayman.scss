@@ -50,8 +50,11 @@
     .column,
     .column2,
     .column3{
-    width: 100%;
-  }
+    	width: 100%;
+     }
+     div.ex2 {
+  	right-bottom: none;
+     }
     @content;
   }
 }
@@ -162,6 +165,7 @@ div.ex1 {
 div.ex2 {
   padding: 5rem 0rem 5rem;
   border-bottom: 1px solid $hr-border-color;
+  right-bottom: 1px solid $hr-border-color;
 }
 
 #header {
