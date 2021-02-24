@@ -111,7 +111,7 @@
 
       <div class="row" style="padding-top: 5rem;">
         <div class="column">
-          <img id ="diagram" src="tjgwilson.github.io/modelWindCartoon.png" alt="diagram" style="width:100%;display:none;">
+          <img id ="diagram" src="tjgwilson.github.io/modelWindCartoon.png" alt="diagram" style="width:100%;display:none;z-index:3;">
           <div id="hover" class="hover_zoom">
             <div class="container">
               <img id="IDmodel" src="tjgwilson.github.io/visit_lightBackgroundDisk0002.png" alt="Model" style="width:100%">
@@ -125,8 +125,9 @@
           <h1 style="text-align:center;"> Radiative Transfer Model </h1>
           <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
             <button onclick="showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');hideText('diagram');" class="btn btn-1 btn-1c">Model</button>
-            <button onclick="showText('diagram');hideText('torus');hideText('model');showText('hover');imgZoomOut('IDmodel');" class="btn btn-1 btn-1c">Diagram</button>
+            <button onclick="showText('diagram');hideText('torus');hideText('model');imgZoomOut('IDmodel');" class="btn btn-1 btn-1c">Diagram</button>
           </div>
+          
           <div id ="model" style="display: none;width:100%;float:left;text-align:center;">
               <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Star</p>
               <img src="tjgwilson.github.io/equation.png" alt="eq.1" style="height:4em;">
