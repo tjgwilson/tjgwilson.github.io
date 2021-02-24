@@ -216,9 +216,13 @@
   } 
       
     function resize() {
-      document.getElementById("IDmodel").style.transform = "scale(3)";
+     var direction = (function() {var id = -1; return function() { return id*-1; };})();
+      direction = direction*3.0;
+      String string = String("scale(%d)",direction);
+      document.getElementById("IDmodel").style.transform = string;
     }
       
+     
     </script>
   </body>
 </html>
