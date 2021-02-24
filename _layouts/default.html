@@ -122,7 +122,7 @@
         </div>                                                                                    
         <div class="column">
           <h1 style="text-align:center;"> Radiative Transfer Model </h1>
-            <button onclick="showText('IDwind');showText('IDstar');showText('IDaccretion');resize(1);" class="btn btn-1 btn-1c">Model</button>
+            <button onclick="showText('IDwind');showText('IDstar');showText('IDaccretion');resize();" class="btn btn-1 btn-1c">Model</button>
         </div>
       </div>
       
@@ -218,8 +218,8 @@
     function resize() {
      var direction = (function() {var id = -1; return function() { return id*-1; };})();
       direction = direction*3.0;
-      String string = String("scale(%d)",direction);
-      document.getElementById("IDmodel").style.transform = string;
+      String x = String("scale(%d)",direction);
+      document.getElementById("IDmodel").style.transform = x;
     }
       
      
