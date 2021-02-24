@@ -119,50 +119,51 @@
               <div id="IDaccretion" class="accretion">Accretion</br>funnel</div>
             </div>
           </div>
-        </div>                                                                                    
-        <div class="column">
-          <h1 style="text-align:center;"> Radiative Transfer Model </h1>
-          <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
-            <button onclick="showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</button>
-            <button onclick="showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');" class="btn btn-1 btn-1c">Torus</button>
+         <div id ="torus" style="display: none;width:100%;float:left;text-align:center;">
+          <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Torus Radiative Transfer Code</p>
+          <div class="flow">
+            <p style="font-weight:bold;">INPUT</p>
+            <p>Analytic Model</p>
+          </div></br>
+          <div class="flow">
+            <p style="font-weight:bold;">GRID</p>
+            <p>2.5D with adaptive mesh refinement</p>
+          </div></br>
+          <div class="flow">
+            <p style="font-weight:bold;">Microphysics</p>
+            <p>Atomic statistical equilibrium calculated for non-LTE. Sobolev with exact integration and pressure broadening</p>
+          </div></br>
+          <div class="flow">
+            <p style="font-weight:bold;">Final RT</p>
+            <p>Co-moving frame ray-tracing</p>
+          </div></br>
+          <div class="flow">
+            <p style="font-weight:bold;">Output</p>
+            <p>Line spectrum</p>
           </div>
-          
-          <div id ="model" style="display: none;width:100%;float:left;text-align:center;">
-              <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Star</p>
-              <img src="tjgwilson.github.io/equation.png" alt="eq.1" style="height:4em;">
-              <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Accretion Funnel</p>
-              <img src="tjgwilson.github.io/equation (1).png" alt="eq.2"></br>
-              <img src="tjgwilson.github.io/equation (2).png" alt="eq.3"></br>
-              <img src="tjgwilson.github.io/equation (3).png" alt="eq.4"></br>
-              <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Stellar Wind</p>
-              <img src="tjgwilson.github.io/equation (4).png" alt="eq.4"></br>
-              <img src="tjgwilson.github.io/equation (5).png" alt="eq.5"> 
-            </div>
-            <div id ="torus" style="display: none;width:100%;float:center;text-align:center;">
-              <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Torus Radiative Transfer Code</p>
-              <div class="flow">
-                <p style="font-weight:bold;">INPUT</p>
-                <p>Analytic Model</p>
-              </div></br>
-              <div class="flow">
-                <p style="font-weight:bold;">GRID</p>
-                <p>2.5D with adaptive mesh refinement</p>
-              </div></br>
-              <div class="flow">
-                <p style="font-weight:bold;">Microphysics</p>
-                <p>Atomic statistical equilibrium calculated for non-LTE. Sobolev with exact integration and pressure broadening</p>
-              </div></br>
-              <div class="flow">
-                <p style="font-weight:bold;">Final RT</p>
-                <p>Co-moving frame ray-tracing</p>
-              </div></br>
-              <div class="flow">
-                <p style="font-weight:bold;">Output</p>
-                <p>Line spectrum</p>
-              </div></br>
-            </div>
+        </div>
+        
+      </div>                                                                                    
+      <div class="column">
+        <h1 style="text-align:center;"> Radiative Transfer Model </h1>
+        <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
+          <button onclick="showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</button>
+          <button onclick="showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');" class="btn btn-1 btn-1c">Torus</button>
+        </div>
+
+        <div id ="model" style="display: none;width:100%;float:left;text-align:center;">
+            <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Star</p>
+            <img src="tjgwilson.github.io/equation.png" alt="eq.1" style="height:4em;">
+            <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Accretion Funnel</p>
+            <img src="tjgwilson.github.io/equation (1).png" alt="eq.2"></br>
+            <img src="tjgwilson.github.io/equation (2).png" alt="eq.3"></br>
+            <img src="tjgwilson.github.io/equation (3).png" alt="eq.4"></br>
+            <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Stellar Wind</p>
+            <img src="tjgwilson.github.io/equation (4).png" alt="eq.4"></br>
+            <img src="tjgwilson.github.io/equation (5).png" alt="eq.5"> 
         </div>
       </div>
+    </div>
        
 <!---------------- Observations ------------------->
       <div class="ex1"></div> 
