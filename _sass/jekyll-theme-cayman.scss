@@ -444,3 +444,13 @@ ul li::before {
     font-size: 0.5rem;
    }
 }
+
+.parent {
+  position: relative;
+}
+.image1 {
+  position: relative;
+}
+.image2 {
+  position: absolute;
+}
