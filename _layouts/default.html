@@ -123,7 +123,7 @@
         <div class="column">
           <h1 style="text-align:center;"> Radiative Transfer Model </h1>
           <div style="width:100%;padding: 1em 2em 1em;">
-            <button onclick="showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');" class="btn btn-1 btn-1c">Model</button>
+            <button onclick="showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showHideText('model','torus','diagram');" class="btn btn-1 btn-1c">Model</button>
           </div>
           <div id ="model" style="display: none;width:100%;float:left;text-align:center;">
               <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Star</p>
@@ -138,6 +138,9 @@
             </div>
             <div id ="torus" style="display: block;width:100%;float:left;text-align:center;">
               <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Torus</p>
+            </div>
+            <div id ="diagram" style="display: none;width:100%;float:left;text-align:center;">
+              <p style="font-size: 1.3em; font-weight: bold; text-align:center;"> Diagram</p>
             </div>
         </div>
       </div>
@@ -227,6 +230,21 @@
       x.style.display = "none";
     } else {
       x.style.display = "block";
+    }
+  }
+      
+   function showHideText(id1,id2,id3) {
+    var x1 = document.getElementById(id1);
+    var x2 = document.getElementById(id2);
+    var x3 = document.getElementById(id3);
+    if (x1.style.display === "block") {
+      x1.style.display = "none";
+      x2.style.display = "none
+      x3.style.display = "none
+    } else {
+      x1.style.display = "block";
+      x2.style.display = "none
+      x3.style.display = "none
     }
   }
     
