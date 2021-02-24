@@ -159,6 +159,19 @@ div.ex2 {
   padding: 0rem 0rem 5rem;
 }
 
+div.flow{
+	width: 60%;
+	border: 1px solid #000000;
+	padding: 5px;
+	text-align: center;
+	
+  @include small {
+	width: 100%;
+  }
+}
+	
+}
+
 #header {
   background-color: $header-bg-color;
   padding: 10px 10px;
