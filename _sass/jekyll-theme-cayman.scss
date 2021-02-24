@@ -421,20 +421,18 @@ ul li::before {
   position: absolute;
   top: 20%;
   left: 45%;
+  display: none;
 }
 .star {
   position: absolute;
   top: 48%;
   left: 50%;
+  display: none;
 }
 .accretion {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 30%;
+  display: none;
 }
 
-.arrow{
-  stroke:#E040FB;
-  stroke-width:2; 
-  marker-end:url(#markerArrow)
-}
