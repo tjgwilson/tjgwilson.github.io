@@ -42,9 +42,9 @@
   </head>
   
   
-  
-  
-  <body>
+ 
+<!---------------- header ------------------->
+<body>
     
     <div id="header">
       <div class="row">
@@ -60,15 +60,17 @@
         
       </div>
     </div>
-
+  
+<!----------------main ------------------->
     <main id="content" class="main-content" role="main">
-      
+<!---------------- pdf poster ------------------->
       <div class="row">
           <div style="text-align: center; padding-top: 0em;">
             <a href="tjgwilson.github.io/coolStars_draft5.pdf"><button class="btn btn-1 btn-1c">PDF Poster</button></a>
           </div>      
       </div>
       
+<!----------------summary & contacts ------------------->
       <div class="ex1" style="padding-bottom: 5rem;"></div> 
       
       <div class="ex1">
@@ -102,12 +104,17 @@
           </div>
         </div>
       </div>
-      
+
+ <!---------------- Radiative Transfer -------------------> 
+
       <div class="row" style="padding-top: 5rem;">
         <div class="column">
+        <div class="container">
           <div class="hover_zoom">
-            <img src="tjgwilson.github.io/visit_lightBackgroundDisk0002.png" alt="Snow" style="width:100%">
+            <img src="tjgwilson.github.io/visit_lightBackgroundDisk0002.png" alt="Model" style="width:100%">
           </div>
+          <div id="annotation" style="top:20%;left:50%;">Stellar Wind</div>
+        </div>
         </div>                                                                                    
         <div class="column">
           <h1 style="text-align:center;"> Radiative Transfer Model </h1>
@@ -193,6 +200,16 @@
         document.getElementById("header").style.fontSize = "1.3rem";
       }
     }
+      
+      
+   function showText(id) {
+    var x = document.getElementById(id);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  } 
     </script>
   </body>
 </html>
