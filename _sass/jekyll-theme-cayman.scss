@@ -432,3 +432,9 @@ ul li::before {
   top: 50%;
   left: 20%;
 }
+
+.arrow{
+  stroke:#E040FB;
+  stroke-width:2; 
+  marker-end:url(#markerArrow)
+}
