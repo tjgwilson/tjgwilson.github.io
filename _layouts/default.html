@@ -187,8 +187,8 @@
           <h1 style="text-align:center;"> Observations </h1>
           
            <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
-            <button onclick="showHideImg('reipurth','targets');" class="btn btn-1 btn-1c">Line Profiles</button>
-            <button onclick="showHideImg('targets','reipurth')" class="btn btn-1 btn-1c">Reipurth Class</button>
+            <button id="obsBtn" onclick="showHideImg('reipurth','targets'); change('obsBtn');" class="btn btn-1 btn-1c">Line Profiles</button>
+<!--             <button onclick="showHideImg('targets','reipurth')" class="btn btn-1 btn-1c">Reipurth Class</button> -->
            </div>
           
           <ul style="padding-top:3em;">
@@ -315,7 +315,11 @@
         x.style.transform = "scale(1)";
      } 
    }
-
+  function change(id){
+    var elem = document.getElementById(id);
+    if (elem.value=="Line Profiles") elem.value = "Reipurth Class";
+    else elem.value = "Line Profiles";
+}
       
      
     </script>
