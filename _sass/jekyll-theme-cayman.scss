@@ -173,6 +173,13 @@ div.flow{
   }
 }
 
+div.flowHeader{
+	poition: absolute
+	width: 100%;
+	background: $header-bg-color;
+	color: #E040FB;
+}
+
 
 #header {
   background-color: $header-bg-color;
