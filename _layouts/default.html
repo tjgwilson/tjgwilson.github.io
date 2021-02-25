@@ -185,6 +185,12 @@
       <div class="row" style="padding-top: 5rem;">
         <div class="column">
           <h1 style="text-align:center;"> Observations </h1>
+          
+           <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
+            <button onclick="showText('targets');showText('reipurth');" class="btn btn-1 btn-1c">Line Profiles</button>
+            <button onclick="showText('reipurth');showText('targets');" class="btn btn-1 btn-1c">Reipurth Class</button>
+           </div>
+          
           <ul style="padding-top:3em;">
           <li>The Figure shows line profiles for 29 T Tauri stars (columns) from the ESO Archive<a href="#eso">[?]</a>, selected to have an accretion rate range of
             10<sup>4</sup>.The stars are ordered by H⍺ peak intensity</li></br>
@@ -196,7 +202,7 @@
           </ul>
         </div>
         <div class="column">
-          <img id="reipurth" src="tjgwilson.github.io/reipurth_poster.png" alt="reipurth Class" style="width:100%;">
+          <img id="reipurth" src="tjgwilson.github.io/reipurth_poster.png" alt="reipurth Class" style="display:none;width:100%;">
           <img id="targets" src="tjgwilson.github.io/herczegStars_poster.png" alt="reipurth Class" style="width:100%;">
         </div>
       </div>
