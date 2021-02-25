@@ -321,9 +321,15 @@
      } 
    }
   function change(id){
-    var elem = document.getElementById(id);
-    if (elem.value=="PROFILES") elem.value = "CLASS";
-    else elem.value = "PROFILES";
+      var el = document.getElementById(id);
+   if (el.firstChild.data == "PROFILES") 
+   {
+       el.firstChild.data = "CLASS";
+   }
+   else 
+   {
+     el.firstChild.data = "PROFILES";
+   }
 }
       
      
