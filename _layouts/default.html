@@ -187,11 +187,11 @@
           <h1 style="text-align:center;"> Observations </h1>
           
            <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
-            <button id="obsBtn" onclick="showHideImg('reipurth','targets'); change('obsBtn');" class="btn btn-1 btn-1c">Line Profiles</button>
+            <button id="obsBtn" onclick="showHideImg('reipurth','targets'); change('obsBtn'); showHideImg('lineInfo','reipurthInfo');" class="btn btn-1 btn-1c">Line Profiles</button>
 <!--             <button onclick="showHideImg('targets','reipurth')" class="btn btn-1 btn-1c">Reipurth Class</button> -->
            </div>
           
-          <ul style="padding-top:3em;">
+          <ul id="lineInfo" style="padding-top:3em;">
           <li>The Figure shows line profiles for 29 T Tauri stars (columns) from the ESO Archive<a href="#eso">[?]</a>, selected to have an accretion rate range of
             10<sup>4</sup>.The stars are ordered by H⍺ peak intensity</li></br>
         
@@ -200,6 +200,11 @@
             <li>Near simultaneous observations of H⍺ (top), Paβ (middle), and Br𝛄 (bottom). The x-axis is velocity with a range of 600 to −600 kms<sup>-1</sup>.</li></br>
             <li>A strong correlation of shape and intensity is seen between the infrared lines, but not between H⍺ and the infrared observations.</li>
           </ul>
+
+        <ul id="reipurthInfo" style="display: none;">
+          <li> Reipurth classification for the X-Shooter line profiles.</li>
+        </ul>
+
         </div>
         <div class="column">
           <img id="reipurth" src="tjgwilson.github.io/reipurth_poster.png" alt="reipurth Class" style="display:none;width:100%;">
@@ -317,8 +322,8 @@
    }
   function change(id){
     var elem = document.getElementById(id);
-    if (elem.value=="Line Profiles") elem.value = "Reipurth Class";
-    else elem.value = "Line Profiles";
+    if (elem.value=="LINE PROFILES") elem.value = "REIPURTH CLASS";
+    else elem.value = "LINE PROFILES";
 }
       
      
