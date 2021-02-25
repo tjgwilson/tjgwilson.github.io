@@ -123,8 +123,8 @@
       <div class="column fade-in">
         <h1 style="text-align:center;"> Radiative Transfer Model </h1>
         <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
-          <button onclick="showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</button>
-          <button onclick="showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');" class="btn btn-1 btn-1c">Torus</button>
+          <button onclick="showText('torusText');showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</button>
+          <button onclick="showText('torusText');showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');" class="btn btn-1 btn-1c">Torus</button>
         </div>
         
         <div id ="torusText" style="display:block;width:100%;float:left;text-align:center;">
@@ -187,9 +187,10 @@
         <div class="column">
           <h1 style="text-align:center;"> Observations </h1>
           <ul>
-          <li>The Figure shows line profiles for 29 T Tauri stars (columns) from the ESO Archive<a href="#eso">[?]</a>, selected to have an.The stars are ordered by H⍺ peak intensity</li>
+          <li>The Figure shows line profiles for 29 T Tauri stars (columns) from the ESO Archive<a href="#eso">[?]</a>, selected to have an accretion rate range of
+            10<sup>4</sup>.The stars are ordered by H⍺ peak intensity</li>
 
-            <li>High resolution spectra from VLT’s X-Shooter gives near simultaneous observations of H⍺ (top), Paβ (middle), and Br𝛾 (bottom).</li> 
+            <li>High resolution: ;~1100 (infrared) and ;~1800 (optical) spectra from VLT’s X-Shooter, observed in Jan 2010.</li> 
             <li>A strong correlation of shape and intensity is seen between the infrared lines, but not between H⍺ and the infrared observations</li>
           </ul>
         </div>
