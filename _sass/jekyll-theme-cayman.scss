@@ -195,19 +195,19 @@ div.flowHeader{
   background-color: $main-bg-color;
   word-wrap: break-word;
   padding: 1rem 1rem;
-  padding-top:230px;
+  padding-top:210px;
   :first-child {
     margin-top:0px;
   }
 	
   @include small {
-    font-size: 1rem;
-    padding-top: 480px;
-    padding-right: 10px;
+    font-size: 0.7rem;
+    padding-top: 380px;
+    padding-right: 2em;
   }
 
   @include medium {
-    font-size: 2rem;
+    font-size: 1rem;
     padding-top: 480px;
   }
   
