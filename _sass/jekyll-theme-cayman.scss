@@ -98,7 +98,7 @@ a {
 	z-index: 0;
 	font-family: inherit;
 	font-size: inherit;
-	color: #000000;
+	color: $header-bg-color;
 	background: none;
 	cursor: pointer;
 	padding: 1em 1em;
@@ -124,8 +124,8 @@ a {
 
 /* Button 1 */
 .btn-1 {
-	border: 2px solid #000000;
-	color: #000000;
+	border: 2px solid $header-bg-color;
+	color: $header-bg-color;
 }
 
 /* Button 1c */
@@ -134,7 +134,7 @@ a {
 	height: 0%;
 	top: 0;
 	left: 0;
-	background: #000000;
+	background: $header-bg-color;
 }
 
 .btn-1c:hover,
