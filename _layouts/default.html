@@ -126,8 +126,8 @@
       <div class="column fade-in">
         <h1 style="text-align:center;"> Radiative Transfer Model </h1>
         <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
-          <button onclick="hideText('torusText');showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</button>
-          <button onclick="showHideImg('video','hover');hideText('torusText');showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');" class="btn btn-1 btn-1c">Torus</button>
+          <button onclick="hideText('torusText');showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</br>Parameters</button>
+          <button onclick="showHideImg('video','hover');hideText('torusText');showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');" class="btn btn-1 btn-1c">Torus</br>Workflow</button>
         </div>
         
         <div id ="torusText" style="display:block;width:100%;float:left;text-align:center;padding-top:4em;">
@@ -192,7 +192,7 @@
           <h1 style="text-align:center;"> Observations </h1>
           
            <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
-            <button id="obsBtn" onclick="showHideImg('reipurth','targets'); change('obsBtn'); showHideImg('reipurthInfo','lineInfo');" class="btn btn-1 btn-1c fade-in">CLASS</button>
+            <button id="obsBtn" onclick="showHideImg('reipurth','targets'); change('obsBtn'); showHideImg('reipurthInfo','lineInfo');" class="btn btn-1 btn-1c fade-in">REIPURTH CLASS</button>
 <!--             <button onclick="showHideImg('targets','reipurth')" class="btn btn-1 btn-1c">Reipurth Class</button> -->
            </div>
           
@@ -327,13 +327,13 @@
    }
   function change(id){
       var el = document.getElementById(id);
-   if (el.firstChild.data == "CLASS") 
+   if (el.firstChild.data == "REIPURTH CLASS") 
    {
        el.firstChild.data = "PROFILES";
    }
    else 
    {
-     el.firstChild.data = "CLASS";
+     el.firstChild.data = "REIPURTH CLASS";
    }
 }
       
