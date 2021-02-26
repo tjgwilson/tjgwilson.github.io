@@ -18,7 +18,7 @@ $btn-color: #000000 !default;
 
 
 // Text
-$section-headings-color: #000000 !default;
+$section-headings-color: $header-bg-color !default;
 $body-text-color: #606c71 !default;
 $body-link-color: #1e6bb8 !default;
 $blockquote-text-color: #819198 !default;
