@@ -127,7 +127,7 @@
       <div class="column fade-in">
         <h1 style="text-align:center;"> Radiative Transfer Model </h1>
         <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
-          <button onclick="showHideImg('hover','video');hideText('torusText');showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</br>Parameters</button>
+          <button onclick="onlyShow('hover');hideText('torusText');showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</br>Parameters</button>
           <button onclick="showHideImg('video','hover');hideText('torusText');showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');" class="btn btn-1 btn-1c">Torus</br>Workflow</button>
         </div>
         
@@ -309,6 +309,12 @@
     var x1 = document.getElementById(id);
     if (x1.style.display != "none") {
       x1.style.display = "none";
+    } 
+  }
+   function onlyShow(id) {
+    var x1 = document.getElementById(id);
+    if (x1.style.display == "none") {
+      x1.style.display = "block";
     } 
   }
     
