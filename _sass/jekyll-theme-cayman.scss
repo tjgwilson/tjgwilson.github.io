@@ -52,11 +52,6 @@
 }
 
 
-@mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -202,14 +197,10 @@ div.flowHeader{
 	
   @include small {
     font-size: 0.7rem;
-    padding-top: 380px;
+    padding-top: 450px;
     padding-right: 2em;
   }
 
-  @include medium {
-    font-size: 1rem;
-    padding-top: 480px;
-  }
   
   kbd {
     background-color: #fafbfc;
