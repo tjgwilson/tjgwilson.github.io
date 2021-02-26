@@ -117,7 +117,7 @@
               <div id="IDstar" class="star">Star</div>
               <div id="IDaccretion" class="accretion">Accretion</br>funnel</div>
             </div>
-            <video id="video" style="width:100%;height:100%;display:none;" autoplay muted>
+            <video id="video" style="width:100%;height:100%;" autoplay muted>
               <source src="tjgwilson.github.io/doppler.mp4" type="video/mp4">
           </video>
           
@@ -127,8 +127,8 @@
       <div class="column fade-in">
         <h1 style="text-align:center;"> Radiative Transfer Model </h1>
         <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
-          <button onclick="showHideImg('hover','video');hideText('torusText');showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</button>
-          <button onclick="showHideImg('video','hover');hideText('torusText');showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');" class="btn btn-1 btn-1c">Torus</button>
+          <button onclick="hideText('torusText');showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');" class="btn btn-1 btn-1c">Model</button>
+          <button onclick="hideText('torusText');showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');" class="btn btn-1 btn-1c">Torus</button>
         </div>
         
         <div id ="torusText" style="display:block;width:100%;float:left;text-align:center;padding-top:4em;">
