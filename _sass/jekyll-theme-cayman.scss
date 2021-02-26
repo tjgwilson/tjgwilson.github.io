@@ -178,10 +178,6 @@ div.flowHeader{
   transition: 1.0s;
   z-index: 20;
 	
-   -webkit-transition: font-size 2.s;
-    -moz-transition: font-size 2.s;
-    -o-transition: font-size 2.s;
-    transition: font-size 2.s;
   
   @include small {
     padding: 1rem 1rem;
