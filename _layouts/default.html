@@ -227,7 +227,7 @@
         </div>
       </div>
  <!---------------- Comparison ------------------->
-      <div class="ex1"></div> 
+<!--       <div class="ex1"></div> 
                       
        <div class="row" style="padding-top: 5rem;">
         <div class="column">
@@ -237,14 +237,44 @@
         <div class="column">
           <h1 style="text-align:center;"> Comparison </h1>
           <ul style="padding-top:3em;">
-            <li>Figure shows the FWHM vs. half width at 10% maxima (HW10%).</br>Models are clipped so that H⍺ matches the observed HW10% range.</li></br>
+            <li>Figure shows the FWHM vs. half width at 10% maxima (HW10%). Models are clipped so that H⍺ matches the observed HW10% range.</li></br>
             <li>Synthetic H⍺ lines reproduce well the observed range of widths and distribution of Reipurth types<a href="#reipurth">[3]</a>.</li></br>
             <li>The same models produce Pa𝛾, Paβ, and Br𝛾 lines ~70-100 kms<sup>-1</sup> too narrow.</li></br>
             <li>Over 80% of the synthetic Pa𝛾, Paβ, and Br𝛾 lines exhibit Inverse P-Cygni profiles.</li></br>
           </ul>
         </div>
+      </div> -->
+<!--        -->
+<!--        -->
+      <div class="ex1"></div> 
+                                                                                             
+      <div class="row" style="padding-top: 5rem;">
+        <div class="column">
+          <h1 style="text-align:center;"> Comparison </h1>
+          
+           <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
+            <button id="obsBtn" onclick="showHideImg('widths','example'); change('obsBtn'); showHideImg('widthInfo','exampleInfo');" class="btn btn-1 btn-1c fade-in">REIPURTH CLASS</button>
+           </div>
+          
+          <ul class="fade-in" id="widthInfo" style="padding-top:3em;">
+              <li>Figure shows the FWHM vs. half width at 10% maxima (HW10%). Models are clipped so that H⍺ matches the observed HW10% range.</li></br>
+              <li>Synthetic H⍺ lines reproduce well the observed range of widths and distribution of Reipurth types<a href="#reipurth">[3]</a>.</li></br>
+              <li>The same models produce Pa𝛾, Paβ, and Br𝛾 lines ~70-100 kms<sup>-1</sup> too narrow.</li></br>
+              <li>Over 80% of the synthetic Pa𝛾, Paβ, and Br𝛾 lines exhibit Inverse P-Cygni profiles.</li></br>
+          </ul>
+
+        <ul class="fade-in" id="exampleInfo" style="display: none;text-align:center;padding:7em 0em 5em;">
+          <li> Reipurth classifications of the X-Shooter Observations (coloured bars) and the synthetic line profiles (hashed bars).</li>
+        </ul>
+
+        </div>
+        <div class="column">
+          <img class="fade-in" id="widths" src="./fwhmVsHwzm_10_05_21_v2.png" alt="Widths" style="display:none;width:100%;">
+          <img class="fade-in" id="example" src="./exampleProfileFit_10_05_21_v0.png" alt="Examples" style="width:100%;">
+        </div>
       </div>
-      
+
+
       <!---------------- Footer ------------------->
      <footer class="site-footer">
        <p style="padding: 1em 0em 1em; font-weight: bold; text-align: center;">
