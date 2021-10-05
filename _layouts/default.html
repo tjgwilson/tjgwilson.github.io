@@ -99,9 +99,9 @@
           <div class="column2" style="text-align:center">
             <h1>Summary</h1>
             <ul>
-              <li>CTTSs are known for their hydrogen emission lines, magnetospheric accretion and mass outflow<a href="#fohla">[1]</a>.</li></br>
-              <li>By comparing synthetic hydrogen profiles from the RT code TORUS<a href="#harries2019">[2]</a> with observations of CTTSs, we aim to constrain and provide insight into the physics.</li></br>
-              <li>Our initial parameter study indicates that the existing line broadening mechanisms are insufficient to account for the observed hydrogen emission.</li></br>
+              <li>We compare hydrogen emission from 29 T Tauri stars with a grid 945 of synthetic line profiles.</li></br>
+              <li>Our synthetic line profiles match the observed H⍺ widths, intensities and profile morphologies.</li></br>
+              <li>However, our study indicates that reproducing H⍺, Paschen, and Brackett lines simultaneously is problematic. The synthetic infrared lines are too narrow and exhibit a higher than observed frequency of Inverse P-Cygni profiles.</li></br>
             </ul>
           </div>
         </div>
@@ -134,7 +134,7 @@
        </div>  
 
       <div class="column fade-in">
-        <h1 style="text-align:center;"> Radiative Transfer Model </h1>
+        <h1 style="text-align:center;"> Radiative Transfer Model - TORUS<a href="#harries2019">[1]</a></h1>
         <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
           <button onclick="onlyShow('hover');hideText('video');hideText('torusText');showText('IDwind');showText('IDstar');showText('IDaccretion');imgZoom('IDmodel');showText('model');hideText('torus');checktext('torusText','torus','model');" class="btn btn-1 btn-1c">Model</br>Parameters</button>
           <button onclick="showHideImg('video','hover');hideText('torusText');showText('torus');hideText('model');imgZoomOut('IDmodel');hideText('IDwind');hideText('IDstar');hideText('IDaccretion');checktext('torusText','model','torus');" class="btn btn-1 btn-1c">Torus</br>Workflow</button>
@@ -207,22 +207,21 @@
            </div>
           
           <ul class="fade-in" id="lineInfo" style="padding-top:3em;">
-          <li>The Figure shows line profiles for 29 T Tauri stars (columns) from the ESO Archive<a href="#eso">[3]</a>, selected to have an accretion rate range of
-            10<sup>4</sup>. The stars are ordered by H⍺ peak intensity.</li></br>
+          <li>Figure shows spectra of 29 T Tauri stars (columns) from the ESO Archive<a href="#eso">[2]</a>. The Stars are ordered by H⍺ intensity.</li></br>
         
-            <li>High resolution: R~1100 (infrared) and R~1800 (optical) spectra from VLT’s X-Shooter, observed in Jan 2010.</li> </br>
+            <li>Medium resolution (R~11600-18400) spectra from VLT’s X-Shooter, observed in Jan 2010.</li> </br>
             
-            <li>Near simultaneous observations of H⍺ (top), Paβ (middle), and Br𝛄 (bottom). The x-axis is velocity with a range of 600 to −600 kms<sup>-1</sup>.</li></br>
-            <li>A strong correlation of shape and intensity is seen between the infrared lines, but not between H⍺ and the infrared observations.</li>
+            <li>Near simultaneous observations of H⍺ (6562 Å), Pa𝛾 (10938 Å), Paβ (12818 Å), and Br𝛾 (21655 Å).</li></br>
+            <li>A correlation of structure and intensity is seen between the infrared lines, this is not reflected by H⍺</li>
           </ul>
 
         <ul class="fade-in" id="reipurthInfo" style="display: none;text-align:center;padding:7em 0em 5em;">
-          <li> Reipurth classification for the X-Shooter line profiles.</li>
+          <li> Reipurth classifications of the X-Shooter Observations (colour bars) and the synthetic line profiles (hashed bars).</li>
         </ul>
 
         </div>
         <div class="column">
-          <img class="fade-in" id="reipurth" src="./reipurth_poster.png" alt="reipurth Class" style="display:none;width:100%;">
+          <img class="fade-in" id="reipurth" src="./reipurth_poster_10_05_21_v0.png" alt="reipurth Class" style="display:none;width:100%;">
           <img class="fade-in" id="targets" src="./herczegStars_poster.png" alt="reipurth Class" style="width:100%;">
         </div>
       </div>
@@ -237,11 +236,10 @@
         <div class="column">
           <h1 style="text-align:center;"> Comparison </h1>
           <ul style="padding-top:3em;">
-            <li>The figure shows the FWHM vs. half width at 10% maxima (HW10%). The synthetic observations are clipped so that the H⍺ data points lie near the
-              observed parameter space.</li></br>
-            <li>Synthetic and observed H⍺ lines show a good accord between the measured parameters of Reipurth classification<a href="#reipurth">[4]</a>, Wλ, FWHM, and HW10%.</li></br>
-            <li>Synthetic lines for Paβ and Br𝛄 are found to be too narrow and Stark broadening is unable to account for the difference. This suggests another form of broadening needs to be invoked.</li></br>
-            <li>Inverse P-Cygni profiles are commonly predicted by the simulations for Paβ and Br𝛄, yet this is not reflected in the observations<a href="#fohla1">[5]</a>.</li></br>
+            <li>Figure shows the FWHM vs. half width at 10% maxima (HW10%). Models are clipped so that H⍺ matches the observed HW10% range.</li></br>
+            <li>Synthetic H⍺ lines reproduce well the observed range of widths and distribution of Reipurth types<a href="#reipurth">[3]</a>.</li></br>
+         <li>The same models produce Pa𝛾, Paβ, and Br𝛾 lines ~70-100 kms<sup>-1</sup> too narrow.</li></br>
+            <li>Over 80% of the synthetic Pa𝛾, Paβ, and Br𝛾 lines exhibit Inverse P-Cygni profiles.</li></br>
           </ul>
         </div>
       </div>
@@ -261,9 +259,6 @@
             <h1 style="text-align:center;">Bibliography</h1>
             <ol style="padding-bottom: 5em;">
               <li>
-                <p id="fohla">Folha, D. F. M. & Emerson, J. P. <cite>Near infrared hydrogen lines as diagnostic of accretion and winds in T Tauri stars</cite>. A&A 365, 90–109 (2001).</p>
-              </li>
-              <li>
                 <p id="harries2019">Harries, T. J., Haworth, T. J., Acreman, D., Ali, A. & Douglas, T. <cite>The TORUS radiation transfer code</cite>. Astronomy and Computing 27, 63–95 (2019).</p>
               </li>
               <li>
@@ -271,9 +266,6 @@
               </li>
               <li>
                 <p id="reipurth">Reipurth, B., Pedrosa, A. & Lago, M. T. V. T. <cite>Halpha emission in pre-main sequence stars. I. an atlas of line profiles</cite>. Astronomy and Astrophysics Supplement 120, 229–256 (1996).</p>
-              </li>
-              <li>
-                <p id="fohla1">Folha, D. F. M. & Emerson, J. P. (2001).</p>
               </li>
             </ol>
           </div>
