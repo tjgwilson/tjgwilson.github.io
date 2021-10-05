@@ -253,7 +253,7 @@
           <h1 style="text-align:center;"> Comparison </h1>
           
            <div style="width:100%;padding: 1em 2em 1em;text-align:center;">
-            <button id="obsBtn" onclick="showHideImg('widths','example'); change('obsBtn'); showHideImg('widthInfo','exampleInfo');" class="btn btn-1 btn-1c fade-in">REIPURTH CLASS</button>
+            <button id="obsBtn" onclick="showHideImg('widths','example'); change1('obsBtn'); showHideImg('widthInfo','exampleInfo');" class="btn btn-1 btn-1c fade-in">EXAMPLE PROFILES</button>
            </div>
           
           <ul class="fade-in" id="widthInfo" style="padding-top:3em;">
@@ -264,7 +264,9 @@
           </ul>
 
         <ul class="fade-in" id="exampleInfo" style="display: none;text-align:center;padding:7em 0em 5em;">
-          <li> Reipurth classifications of the X-Shooter Observations (coloured bars) and the synthetic line profiles (hashed bars).</li>
+          <li> Three examples of the best match between synthetic and observed H⍺ profiles.</li>
+          <li> The models have been chosen because closely resemble the H⍺ obersvations in width and intensity.</li>
+          <li> Despite the good H⍺ correspondence the infrared lines are poorly fitted.</li>
         </ul>
 
         </div>
@@ -389,6 +391,18 @@
    else 
    {
      el.firstChild.data = "REIPURTH CLASS";
+   }
+}
+      
+function change1(id){
+      var el = document.getElementById(id);
+   if (el.firstChild.data == "EXAMPLE PROFILES") 
+   {
+       el.firstChild.data = "WIDTHS";
+   }
+   else 
+   {
+     el.firstChild.data = "EXAMPLE PROFILES";
    }
 }
       
